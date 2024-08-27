@@ -49,7 +49,7 @@ function atualizaTabela(){
 
 function atualizaMediaFinal(){
     const mediaFinal = calcularMediaFinal();
-    document.getElementById('media-final-valor').innerHTML = mediaFinal; //TROCA O HTML PELA VARIÁVEL
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); // O "INNER.HTML" TROCA O HTML PELA VARIÁVEL E O "TO.FIXED(2) CRIA 2 CASAS APÓS A VÍRGULA"
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado; //TROCA O HTML PELO "OPERADOR TERNÁRIO"
 }
 
